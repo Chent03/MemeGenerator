@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA4B2AC01ED24D5700C5AFED /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B2ABF1ED24D5700C5AFED /* Meme.swift */; };
 		EADC6F9F1ECE8F2800F5349C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC6F9E1ECE8F2800F5349C /* AppDelegate.swift */; };
 		EADC6FA11ECE8F2800F5349C /* MemeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC6FA01ECE8F2800F5349C /* MemeEditorViewController.swift */; };
 		EADC6FA41ECE8F2800F5349C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADC6FA21ECE8F2800F5349C /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA4B2ABF1ED24D5700C5AFED /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		EADC6F9B1ECE8F2800F5349C /* Meme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADC6F9E1ECE8F2800F5349C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EADC6FA01ECE8F2800F5349C /* MemeEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeEditorViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				EADC6FA51ECE8F2800F5349C /* Assets.xcassets */,
 				EADC6FA71ECE8F2800F5349C /* LaunchScreen.storyboard */,
 				EADC6FAA1ECE8F2800F5349C /* Info.plist */,
-				EA4B2ABF1ED24D5700C5AFED /* Meme.swift */,
 			);
 			name = Meme;
 			path = experiment;
@@ -153,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EADC6FA11ECE8F2800F5349C /* MemeEditorViewController.swift in Sources */,
-				EA4B2AC01ED24D5700C5AFED /* Meme.swift in Sources */,
 				EADC6F9F1ECE8F2800F5349C /* AppDelegate.swift in Sources */,
 				EADC6FB21ECFD6A800F5349C /* TextFieldDelegate.swift in Sources */,
 			);
