@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4B2AC01ED24D5700C5AFED /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B2ABF1ED24D5700C5AFED /* Meme.swift */; };
 		EADC6F9F1ECE8F2800F5349C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC6F9E1ECE8F2800F5349C /* AppDelegate.swift */; };
-		EADC6FA11ECE8F2800F5349C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC6FA01ECE8F2800F5349C /* ViewController.swift */; };
+		EADC6FA11ECE8F2800F5349C /* MemeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADC6FA01ECE8F2800F5349C /* MemeEditorViewController.swift */; };
 		EADC6FA41ECE8F2800F5349C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADC6FA21ECE8F2800F5349C /* Main.storyboard */; };
 		EADC6FA61ECE8F2800F5349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADC6FA51ECE8F2800F5349C /* Assets.xcassets */; };
 		EADC6FA91ECE8F2800F5349C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADC6FA71ECE8F2800F5349C /* LaunchScreen.storyboard */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA4B2ABF1ED24D5700C5AFED /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		EADC6F9B1ECE8F2800F5349C /* Meme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADC6F9E1ECE8F2800F5349C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EADC6FA01ECE8F2800F5349C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EADC6FA01ECE8F2800F5349C /* MemeEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeEditorViewController.swift; sourceTree = "<group>"; };
 		EADC6FA31ECE8F2800F5349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EADC6FA51ECE8F2800F5349C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADC6FA81ECE8F2800F5349C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +60,12 @@
 			children = (
 				EADC6FB01ECFD69500F5349C /* Delegates */,
 				EADC6F9E1ECE8F2800F5349C /* AppDelegate.swift */,
-				EADC6FA01ECE8F2800F5349C /* ViewController.swift */,
+				EADC6FA01ECE8F2800F5349C /* MemeEditorViewController.swift */,
 				EADC6FA21ECE8F2800F5349C /* Main.storyboard */,
 				EADC6FA51ECE8F2800F5349C /* Assets.xcassets */,
 				EADC6FA71ECE8F2800F5349C /* LaunchScreen.storyboard */,
 				EADC6FAA1ECE8F2800F5349C /* Info.plist */,
+				EA4B2ABF1ED24D5700C5AFED /* Meme.swift */,
 			);
 			name = Meme;
 			path = experiment;
@@ -149,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADC6FA11ECE8F2800F5349C /* ViewController.swift in Sources */,
+				EADC6FA11ECE8F2800F5349C /* MemeEditorViewController.swift in Sources */,
+				EA4B2AC01ED24D5700C5AFED /* Meme.swift in Sources */,
 				EADC6F9F1ECE8F2800F5349C /* AppDelegate.swift in Sources */,
 				EADC6FB21ECFD6A800F5349C /* TextFieldDelegate.swift in Sources */,
 			);
@@ -279,7 +283,7 @@
 				DEVELOPMENT_TEAM = PXATH59SUB;
 				INFOPLIST_FILE = experiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TonyChen.experiment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TonyChen.Meme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -292,7 +296,7 @@
 				DEVELOPMENT_TEAM = PXATH59SUB;
 				INFOPLIST_FILE = experiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.TonyChen.experiment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TonyChen.Meme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

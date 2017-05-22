@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meme Editor View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="experiment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemeEditorViewController" customModule="Meme" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-zc-las">
-                                <rect key="frame" x="67" y="231" width="240" height="204"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JpY-uG-Kud">
                                 <rect key="frame" x="0.0" y="101" width="375" height="17"/>
@@ -60,24 +60,24 @@
                         <color key="backgroundColor" red="0.66229968309999998" green="1" blue="0.88341332240000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zeN-Wc-Vzg" secondAttribute="trailing" id="10d-OE-Z2h"/>
-                            <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="JpY-uG-Kud" secondAttribute="bottom" constant="113" id="21W-Xw-PKd"/>
+                            <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="JpY-uG-Kud" secondAttribute="bottom" constant="-118" id="21W-Xw-PKd"/>
                             <constraint firstAttribute="trailing" secondItem="JpY-uG-Kud" secondAttribute="trailing" id="3oh-xB-tyC"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Gs-V9-1Xu"/>
-                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="tjP-zc-las" secondAttribute="bottom" constant="188" id="GPc-ed-kFe"/>
+                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="tjP-zc-las" secondAttribute="bottom" constant="-44" id="GPc-ed-kFe"/>
                             <constraint firstAttribute="trailing" secondItem="hkQ-TW-rct" secondAttribute="trailing" id="HeI-Yb-qhy"/>
                             <constraint firstItem="zeN-Wc-Vzg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MeF-dC-EWm"/>
-                            <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="JpY-uG-Kud" secondAttribute="bottom" constant="113" id="PLd-i0-eKH"/>
-                            <constraint firstItem="tjP-zc-las" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Q2u-P0-KYf"/>
+                            <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="JpY-uG-Kud" secondAttribute="bottom" constant="-118" id="PLd-i0-eKH"/>
+                            <constraint firstItem="tjP-zc-las" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Q2u-P0-KYf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hkQ-TW-rct" secondAttribute="bottom" id="RIT-Tn-U5k"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hkQ-TW-rct" secondAttribute="bottom" id="UPs-GT-75b"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" constant="37" id="Ups-UT-jLf"/>
-                            <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="167" id="XuY-c4-RX9"/>
+                            <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="XuY-c4-RX9"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b6w-zS-Cc3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tjP-zc-las" secondAttribute="trailing" constant="52" id="dFb-AR-9Ne"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tjP-zc-las" secondAttribute="trailing" constant="-16" id="dFb-AR-9Ne"/>
                             <constraint firstAttribute="trailing" secondItem="hkQ-TW-rct" secondAttribute="trailing" id="dNF-UL-lHn"/>
                             <constraint firstAttribute="trailing" secondItem="zeN-Wc-Vzg" secondAttribute="trailing" id="gnw-y7-jOI"/>
                             <constraint firstAttribute="trailing" secondItem="JpY-uG-Kud" secondAttribute="trailing" id="n6Y-il-jYo"/>
-                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="tjP-zc-las" secondAttribute="bottom" constant="188" id="nva-y0-sId"/>
+                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="tjP-zc-las" secondAttribute="bottom" constant="-44" id="nva-y0-sId"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" constant="37" id="paC-vn-afT"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" constant="37" id="rxx-Yb-U2u"/>
                             <constraint firstItem="JpY-uG-Kud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wSP-e9-xBw"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var ImagePickerView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
@@ -45,20 +45,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topTextField.defaultTextAttributes = memeTextAttributes
-        bottomTextField.defaultTextAttributes = memeTextAttributes
+        
+        config(topTextField, defaultText: "TOP")
+        config(bottomTextField, defaultText: "BOTTOM")
     
-        topTextField.text = "TOP"
-        topTextField.textAlignment = .center
-        bottomTextField.text = "BOTTOM"
-        bottomTextField.textAlignment = .center
-        
-        
-        topTextField.delegate = textDelegate
-        bottomTextField.delegate = textDelegate
         // Do any additional setup after loading the view, typically from a nib.
         
     
+    }
+    
+    func config(_ textField: UITextField, defaultText: String){
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.text = defaultText
+        textField.textAlignment = .center
+        textField.delegate = textDelegate
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -87,7 +87,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            ImagePickerView.contentMode = .scaleAspectFill
+            ImagePickerView.contentMode = .scaleAspectFit
             ImagePickerView.image = image
         }else {
             print("Error")
@@ -97,17 +97,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func pickAnImage(_ sender: Any) {
-        let pickerController = UIImagePickerController()
-        pickerController.delegate = self
-        pickerController.sourceType = .photoLibrary
-        self.present(pickerController, animated: true, completion: nil)
+        image(.photoLibrary)
+
     }
 
     @IBAction func pickAnImageFromCamera(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
+        image(.camera)
+    }
+    
+    func image(_ source: UIImagePickerControllerSourceType){
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.sourceType = source
+        self.present(pickerController, animated: true, completion: nil)
     }
     
     func keyboardWillShow(_ notification:Notification){
@@ -119,7 +121,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func keyboardWillHide(_ notification: Notification){
         if(bottomTextField.isFirstResponder){
-            view.frame.origin.y += getKeyboardHeight(notification)
+            view.frame.origin.y = 0
         }
     }
     
