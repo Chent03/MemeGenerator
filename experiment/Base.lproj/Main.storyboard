@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LiE-jK-Mtm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LiE-jK-Mtm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,13 +32,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-Wc-Vzg">
-                                <rect key="frame" x="0.0" y="569" width="375" height="17"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                            </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkQ-TW-rct">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -56,6 +49,13 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-Wc-Vzg">
+                                <rect key="frame" x="0.0" y="606" width="375" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.66229968309999998" green="1" blue="0.88341332240000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -70,7 +70,7 @@
                             <constraint firstItem="tjP-zc-las" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Q2u-P0-KYf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hkQ-TW-rct" secondAttribute="bottom" id="RIT-Tn-U5k"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hkQ-TW-rct" secondAttribute="bottom" id="UPs-GT-75b"/>
-                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" constant="37" id="Ups-UT-jLf"/>
+                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" id="Ups-UT-jLf"/>
                             <constraint firstItem="tjP-zc-las" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="XuY-c4-RX9"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b6w-zS-Cc3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tjP-zc-las" secondAttribute="trailing" constant="-16" id="dFb-AR-9Ne"/>
@@ -78,8 +78,8 @@
                             <constraint firstAttribute="trailing" secondItem="zeN-Wc-Vzg" secondAttribute="trailing" id="gnw-y7-jOI"/>
                             <constraint firstAttribute="trailing" secondItem="JpY-uG-Kud" secondAttribute="trailing" id="n6Y-il-jYo"/>
                             <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="tjP-zc-las" secondAttribute="bottom" constant="-44" id="nva-y0-sId"/>
-                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" constant="37" id="paC-vn-afT"/>
-                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" constant="37" id="rxx-Yb-U2u"/>
+                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" id="paC-vn-afT"/>
+                            <constraint firstItem="hkQ-TW-rct" firstAttribute="top" secondItem="zeN-Wc-Vzg" secondAttribute="bottom" id="rxx-Yb-U2u"/>
                             <constraint firstItem="JpY-uG-Kud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wSP-e9-xBw"/>
                         </constraints>
                     </view>
