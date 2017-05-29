@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  experiment
+//  MemeEditorViewController.swift
+//  Meme Generator
 //
 //  Created by Tony Chen on 5/18/17.
 //  Copyright © 2017 Tony Chen. All rights reserved.
@@ -25,12 +25,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     let textDelegate = TextFieldDelegate()
     
-    struct Meme {
-        var topText: String
-        var bottomText: String
-        var originalImage: UIImage
-        var memedImage: UIImage
-    }
+    
     
     
     
@@ -149,7 +144,11 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
 
     
     func save(){
-        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: ImagePickerView.image!, memedImage: generateMemeImage())
+        let meme = Memes(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: ImagePickerView.image!, memedImage: generateMemeImage())
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.memes.append(meme)
+        print(appDelegate.memes.count)
     }
     
     
@@ -181,6 +180,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             if success{
                 self.save()
                 self.dismiss(animated: true, completion: nil)
+                self.backToSent()
             } else {
                 print("Error saving")
             }
@@ -197,6 +197,13 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         ImagePickerView.image = nil
         shareButton.isEnabled = false
         
+        self.backToSent()
+        
+    }
+    
+    func backToSent(){
+    
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     
